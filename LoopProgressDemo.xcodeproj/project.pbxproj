@@ -15,6 +15,7 @@
 		23E645F41CFEDD8900E1F3C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E645F21CFEDD8900E1F3C2 /* LaunchScreen.storyboard */; };
 		23E645FF1CFEDD8A00E1F3C2 /* LoopProgressDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E645FE1CFEDD8A00E1F3C2 /* LoopProgressDemoTests.m */; };
 		23E6460A1CFEDD8A00E1F3C2 /* LoopProgressDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E646091CFEDD8A00E1F3C2 /* LoopProgressDemoUITests.m */; };
+		23E6461B1CFEDDDF00E1F3C2 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E6461A1CFEDDDF00E1F3C2 /* ProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		23E646051CFEDD8A00E1F3C2 /* LoopProgressDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopProgressDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E646091CFEDD8A00E1F3C2 /* LoopProgressDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopProgressDemoUITests.m; sourceTree = "<group>"; };
 		23E6460B1CFEDD8A00E1F3C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23E646191CFEDDDF00E1F3C2 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		23E6461A1CFEDDDF00E1F3C2 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +104,8 @@
 		23E645E31CFEDD8900E1F3C2 /* LoopProgressDemo */ = {
 			isa = PBXGroup;
 			children = (
-				23E645E71CFEDD8900E1F3C2 /* AppDelegate.h */,
-				23E645E81CFEDD8900E1F3C2 /* AppDelegate.m */,
-				23E645EA1CFEDD8900E1F3C2 /* ViewController.h */,
-				23E645EB1CFEDD8900E1F3C2 /* ViewController.m */,
-				23E645ED1CFEDD8900E1F3C2 /* Main.storyboard */,
-				23E645F01CFEDD8900E1F3C2 /* Assets.xcassets */,
-				23E645F21CFEDD8900E1F3C2 /* LaunchScreen.storyboard */,
-				23E645F51CFEDD8900E1F3C2 /* Info.plist */,
+				23E646181CFEDDB000E1F3C2 /* controller */,
+				23E646171CFEDDAB00E1F3C2 /* view */,
 				23E645E41CFEDD8900E1F3C2 /* Supporting Files */,
 			);
 			path = LoopProgressDemo;
@@ -117,6 +114,11 @@
 		23E645E41CFEDD8900E1F3C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				23E645F01CFEDD8900E1F3C2 /* Assets.xcassets */,
+				23E645F21CFEDD8900E1F3C2 /* LaunchScreen.storyboard */,
+				23E645F51CFEDD8900E1F3C2 /* Info.plist */,
+				23E645E71CFEDD8900E1F3C2 /* AppDelegate.h */,
+				23E645E81CFEDD8900E1F3C2 /* AppDelegate.m */,
 				23E645E51CFEDD8900E1F3C2 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +140,25 @@
 				23E6460B1CFEDD8A00E1F3C2 /* Info.plist */,
 			);
 			path = LoopProgressDemoUITests;
+			sourceTree = "<group>";
+		};
+		23E646171CFEDDAB00E1F3C2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				23E646191CFEDDDF00E1F3C2 /* ProgressView.h */,
+				23E6461A1CFEDDDF00E1F3C2 /* ProgressView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		23E646181CFEDDB000E1F3C2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				23E645EA1CFEDD8900E1F3C2 /* ViewController.h */,
+				23E645EB1CFEDD8900E1F3C2 /* ViewController.m */,
+				23E645ED1CFEDD8900E1F3C2 /* Main.storyboard */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23E645EC1CFEDD8900E1F3C2 /* ViewController.m in Sources */,
+				23E6461B1CFEDDDF00E1F3C2 /* ProgressView.m in Sources */,
 				23E645E91CFEDD8900E1F3C2 /* AppDelegate.m in Sources */,
 				23E645E61CFEDD8900E1F3C2 /* main.m in Sources */,
 			);
@@ -416,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoopProgressDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.junanxin.LoopProgressDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoopProgressDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.junanxin.LoopProgressDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +522,7 @@
 				23E646101CFEDD8A00E1F3C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23E646111CFEDD8A00E1F3C2 /* Build configuration list for PBXNativeTarget "LoopProgressDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +531,7 @@
 				23E646131CFEDD8A00E1F3C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23E646141CFEDD8A00E1F3C2 /* Build configuration list for PBXNativeTarget "LoopProgressDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +540,7 @@
 				23E646161CFEDD8A00E1F3C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

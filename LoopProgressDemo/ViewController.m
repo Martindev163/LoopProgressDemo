@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "ProgressView.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) UISlider *progressSlider;
+
+@property (strong, nonatomic) ProgressView *progressView;
 
 @end
 
@@ -16,12 +21,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _progressView = [[ProgressView alloc] initWithFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width/2 - 80, 100, 160, 160)];
+    [self.view addSubview:_progressView];
+    _progressSlider = [[UISlider alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2-80, 400, 160, 10)];
+    [_progressSlider addTarget:self action:@selector(sliderChange) forControlEvents:UIControlEventValueChanged];
+    _progressSlider.maximumValue = 1.0;
+    _progressSlider.minimumValue = 0.0;
+    [self.view addSubview:_progressSlider];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)sliderChange
+{
+    _progressView.percentage = _progressSlider.value;
 }
 
 @end
