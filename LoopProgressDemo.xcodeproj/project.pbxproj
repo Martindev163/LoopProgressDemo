@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234A77F81D192E3700D378F2 /* CirCleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 234A77F71D192E3700D378F2 /* CirCleProgressView.m */; };
 		23E645E61CFEDD8900E1F3C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E645E51CFEDD8900E1F3C2 /* main.m */; };
 		23E645E91CFEDD8900E1F3C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E645E81CFEDD8900E1F3C2 /* AppDelegate.m */; };
 		23E645EC1CFEDD8900E1F3C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E645EB1CFEDD8900E1F3C2 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		234A77F61D192E3700D378F2 /* CirCleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirCleProgressView.h; sourceTree = "<group>"; };
+		234A77F71D192E3700D378F2 /* CirCleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirCleProgressView.m; sourceTree = "<group>"; };
 		23E645E11CFEDD8900E1F3C2 /* LoopProgressDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopProgressDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E645E51CFEDD8900E1F3C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23E645E71CFEDD8900E1F3C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 		23E646171CFEDDAB00E1F3C2 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				234A77F61D192E3700D378F2 /* CirCleProgressView.h */,
+				234A77F71D192E3700D378F2 /* CirCleProgressView.m */,
 				23E646191CFEDDDF00E1F3C2 /* ProgressView.h */,
 				23E6461A1CFEDDDF00E1F3C2 /* ProgressView.m */,
 			);
@@ -294,6 +299,7 @@
 				23E645EC1CFEDD8900E1F3C2 /* ViewController.m in Sources */,
 				23E6461B1CFEDDDF00E1F3C2 /* ProgressView.m in Sources */,
 				23E645E91CFEDD8900E1F3C2 /* AppDelegate.m in Sources */,
+				234A77F81D192E3700D378F2 /* CirCleProgressView.m in Sources */,
 				23E645E61CFEDD8900E1F3C2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
